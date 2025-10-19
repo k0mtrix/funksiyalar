@@ -9,12 +9,12 @@ def shefrla (matn,kalit):
     
     shefr_matn=''
     for i in range(len(matn)):
-        if('a'<matn[i]<'z'):
+        if('a'<=matn[i]<='z'):
             shefr_matn += (chr((ord(matn[i])-97+ord(kalit[i%len(kalit)])-97)%26+97))
         else:
             shefr_matn+=matn[i]
     return shefr_matn
 
 #ishlatish
-#print(shefrla('bugun dushanba', 'salom'))
+print(shefrla('bugun dushanba', 'salom'))
     
